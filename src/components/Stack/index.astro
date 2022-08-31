@@ -1,0 +1,7 @@
+---
+const { direction = "column", gap = 0 } = Astro.props;
+---
+
+<div style={`display: flex; flex-direction: ${direction};`}>
+  <slot />
+</div>
