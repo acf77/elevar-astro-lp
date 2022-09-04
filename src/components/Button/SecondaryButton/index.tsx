@@ -5,7 +5,7 @@ interface ButtonProps {
   buttonColor?: "yellow" | "red" | "green" | "white";
   fullWidth?: boolean;
   title: string;
-  onClick: string;
+  onClick?: string;
 }
 
 export const SecondaryButton = ({ title, onClick }: ButtonProps) => {

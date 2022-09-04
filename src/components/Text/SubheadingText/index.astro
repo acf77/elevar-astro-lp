@@ -1,0 +1,9 @@
+---
+import { subheadingTextStyles } from "./styles";
+
+type SubheadingTextProps = React.HTMLProps<HTMLHeadingElement> & {
+  textType?: "light" | "heavy";
+};
+---
+
+<h3 style={subheadingTextStyles}><slot /></h3>

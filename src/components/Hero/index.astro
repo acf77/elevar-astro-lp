@@ -1,0 +1,39 @@
+---
+import { PrimaryButton } from "@components/Button/PrimaryButton";
+import { SecondaryButton } from "@components/Button/SecondaryButton";
+import DisplayText from "@components/Text/DisplayText/DisplayText.astro";
+import SubheadingText from "@components/Text/SubheadingText/index.astro";
+import Stack from "../Stack/index.astro";
+---
+
+<div class="gradient">
+  <Stack direction="row">
+    <img
+      style="padding: 0 125px"
+      width="395px"
+      src="/home-phone.png"
+      alt="phone"
+    />
+    <Stack>
+      <DisplayText color="yellow">Real Answers from Real Doctors</DisplayText>
+      <SubheadingText
+        >Send your question via WhatsApp, and get a video response back.</SubheadingText
+      >
+      <Stack direction="row" gap={24}>
+        <PrimaryButton client:load title="Ask a doctor" />
+        <SecondaryButton client:load title="Learn more" />
+      </Stack>
+    </Stack>
+  </Stack>
+</div>
+
+<style>
+  .gradient {
+    background: linear-gradient(
+      270deg,
+      #ded7ea 0%,
+      rgba(244, 242, 248, 0.8) 55.58%,
+      rgba(244, 242, 248, 0) 100%
+    );
+  }
+</style>

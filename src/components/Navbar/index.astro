@@ -1,0 +1,13 @@
+---
+import CaptionText from "@components/Text/CaptionText/index.astro";
+import Stack from "@components/Stack/index.astro";
+
+import { navbarStyle } from "./styles";
+---
+
+<div style={navbarStyle.container}>
+  <Stack direction="row" gap={34}>
+    <img src="/elevar-logo-56px.svg" />
+    <CaptionText size="heavy">Book a consultation</CaptionText>
+  </Stack>
+</div>

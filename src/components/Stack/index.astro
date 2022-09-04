@@ -1,7 +1,15 @@
 ---
-const { direction = "column", gap = 0 } = Astro.props;
+type StackProps = {
+  direction?: "column" | "row" | "row-reverse" | "column-reverse";
+  gap?: number;
+};
+
+const { direction = "column", gap = 0 } = Astro.props as StackProps;
 ---
 
-<div style={`display: flex; flex-direction: ${direction};`}>
+<div
+  style={`display: flex; flex-direction: ${direction}; gap: ${gap}px; margin-right: 72px
+`}
+>
   <slot />
 </div>

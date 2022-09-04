@@ -1,32 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero/index.astro";
+import Navbar from "../components/Navbar/index.astro";
 
-import { PrimaryButton } from "../components/Button/PrimaryButton";
-import DisplayText from "../components/Text/DisplayText/DisplayText.astro";
-import Stack from "../components/Stack/index.astro";
-import { SecondaryButton } from "../components/Button/SecondaryButton";
-import { Grid } from "@mui/material";
-import { Container } from "@mui/system";
-
-const heyAlert = `() => alert('text')`;
+// const heyAlert = `() => alert('text')`;
 ---
 
 <Layout title="Elevar Salud - Ask your question">
-  <Stack direction="row">
-    <Stack direction="row">
-      <img
-        style="padding: 0 125px"
-        width="395px"
-        src="/home-phone.png"
-        alt="phone"
-      />
-      <DisplayText>Real Answers from Real Doctors</DisplayText>
-    </Stack>
-    <Stack direction="row" gap={24}>
-      <PrimaryButton client:load title="Ask a doctor" onClick={heyAlert} />
-      <SecondaryButton client:load title="Learn more" onClick={heyAlert} />
-    </Stack>
-  </Stack>
+  <Navbar />
+  <Hero />
 </Layout>
 
 <style>

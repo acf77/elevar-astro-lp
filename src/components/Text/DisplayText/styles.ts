@@ -2,11 +2,12 @@ import { breakpoints } from "../../../theme/breakpoints";
 import { colors } from "../../../theme/colors";
 
 export const displayTextStyle = {
+  fontFamily: "Metropolis",
   fontWeight: "700",
   fontSize: "72px",
   lineHeight: "80px",
   letterSpacing: "-2px",
-  color: colors.neutrals.title,
+  margin: "0px",
 
   [`@media (max-width: ${breakpoints.MOBILE_LARGE})`]: {
     lineHeight: "60px",
@@ -22,4 +23,9 @@ export const displayTextStyle = {
   //   font-size: 34px;
   //   line-height: 38px;
   // }
+};
+
+export const displayTextStyleColor = {
+  ...displayTextStyle,
+  color: colors.getAccentYellow(6),
 };

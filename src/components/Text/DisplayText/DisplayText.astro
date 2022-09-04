@@ -1,5 +1,9 @@
 ---
-import { displayTextStyle } from "./styles";
+import { displayTextStyle, displayTextStyleColor } from "./styles";
+
+const { color } = Astro.props;
 ---
 
-<h1 style={displayTextStyle}><slot /></h1>
+<h1 style={color === "yellow" ? displayTextStyleColor : displayTextStyle}>
+  <slot />
+</h1>

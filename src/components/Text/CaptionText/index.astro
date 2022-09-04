@@ -1,0 +1,9 @@
+---
+import { captionTextStyle, captionTextStyleHeavy } from "./styles";
+
+const { size = "regular" } = Astro.props;
+---
+
+<p style={size === "heavy" ? captionTextStyleHeavy : captionTextStyle}>
+  <slot />
+</p>
