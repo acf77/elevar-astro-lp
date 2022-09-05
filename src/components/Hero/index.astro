@@ -2,6 +2,7 @@
 import { PrimaryButton } from "@components/Button/PrimaryButton";
 import { SecondaryButton } from "@components/Button/SecondaryButton";
 import DisplayText from "@components/Text/DisplayText/DisplayText.astro";
+import P3 from "@components/Text/ParagraphText/P3.astro";
 import SubheadingText from "@components/Text/SubheadingText/index.astro";
 import Stack from "../Stack/index.astro";
 ---
@@ -13,7 +14,15 @@ import Stack from "../Stack/index.astro";
       width="395px"
       src="/home-phone.png"
       alt="phone"
+      class="phone"
     />
+    <div class="first-question">
+      <img src="/hero-patient-avatar.svg" class="hero-patient-avatar" />
+      <P3>
+        I have a weird rash on my forearm that has been growing for the last 3
+        days. What could this be?</P3
+      >
+    </div>
     <Stack>
       <DisplayText color="yellow">Real Answers from Real Doctors</DisplayText>
       <SubheadingText
@@ -36,4 +45,46 @@ import Stack from "../Stack/index.astro";
       rgba(244, 242, 248, 0) 100%
     );
   }
+  /* .phone {
+    animation: phone 1s ease-in 0s forwards;
+  }
+
+  @keyframes phone {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
+
+  .first-question {
+    border-radius: 16px;
+    background: #ded7ea;
+    position: absolute;
+    padding: 16px;
+    width: 220px;
+    left: 325px;
+    top: 210px;
+    /* animation: first-question 1s ease-out 0s forwards;
+    animation-delay: 1s;
+    visibility: hidden; */
+  }
+
+  .hero-patient-avatar {
+    position: absolute;
+    left: 228px;
+    top: -20px;
+  }
+
+  /* @keyframes first-question {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  } */
 </style>

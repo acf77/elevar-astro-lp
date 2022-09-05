@@ -1,7 +1,11 @@
 ---
 import { captionTextStyle, captionTextStyleHeavy } from "./styles";
 
-const { size = "regular" } = Astro.props;
+type Props = {
+  size: "heavy" | "light";
+};
+
+const { size = "light" } = Astro.props;
 ---
 
 <p style={size === "heavy" ? captionTextStyleHeavy : captionTextStyle}>
