@@ -17,14 +17,15 @@ import Stack from "../Stack/index.astro";
       class="phone"
     />
     <div class="first-question">
-      <img src="/hero-patient-avatar.svg" class="hero-patient-avatar" />
+      <img src="/hero-patient-avatar.webp" class="hero-patient-avatar" />
       <P3>
         I have a weird rash on my forearm that has been growing for the last 3
         days. What could this be?</P3
       >
     </div>
     <Stack>
-      <DisplayText color="yellow">Real Answers from Real Doctors</DisplayText>
+      <DisplayText color="yellow">Real Answers</DisplayText>
+      <DisplayText>from Real Doctors</DisplayText>
       <SubheadingText
         >Send your question via WhatsApp, and get a video response back.</SubheadingText
       >
@@ -45,7 +46,7 @@ import Stack from "../Stack/index.astro";
       rgba(244, 242, 248, 0) 100%
     );
   }
-  /* .phone {
+  .phone {
     animation: phone 1s ease-in 0s forwards;
   }
 
@@ -56,7 +57,7 @@ import Stack from "../Stack/index.astro";
     100% {
       opacity: 1;
     }
-  } */
+  }
 
   .first-question {
     border-radius: 16px;
@@ -66,18 +67,19 @@ import Stack from "../Stack/index.astro";
     width: 220px;
     left: 325px;
     top: 210px;
-    /* animation: first-question 1s ease-out 0s forwards;
+    animation: first-question 1s ease-out 0s forwards;
     animation-delay: 1s;
-    visibility: hidden; */
+    visibility: hidden;
   }
 
   .hero-patient-avatar {
     position: absolute;
     left: 228px;
-    top: -20px;
+    top: -15px;
+    width: 32px;
   }
 
-  /* @keyframes first-question {
+  @keyframes first-question {
     0% {
       opacity: 0;
     }
@@ -86,5 +88,5 @@ import Stack from "../Stack/index.astro";
       visibility: visible;
       opacity: 1;
     }
-  } */
+  }
 </style>

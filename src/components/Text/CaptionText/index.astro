@@ -2,12 +2,34 @@
 import { captionTextStyle, captionTextStyleHeavy } from "./styles";
 
 type Props = {
-  size: "heavy" | "light";
+  size?: "heavy" | "light";
+  href?: string;
 };
 
-const { size = "light" } = Astro.props;
+const { size = "light", href } = Astro.props as Props;
 ---
 
-<p style={size === "heavy" ? captionTextStyleHeavy : captionTextStyle}>
+<a href={href} class={size === "heavy" ? "heavy" : "light"}>
   <slot />
-</p>
+</a>
+
+<style>
+  a {
+    font-family: "Metropolis";
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+    align-self: center;
+    font-size: 12px;
+  }
+  a:hover {
+    color: blueviolet;
+  }
+  .light {
+    font-weight: 400;
+  }
+
+  .heavy {
+    font-weight: 600;
+  }
+</style>
