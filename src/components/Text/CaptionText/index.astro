@@ -1,19 +1,21 @@
 ---
 type Props = {
-  size?: "heavy" | "light";
+  size?: "heavy";
   href?: string;
 };
 
-const { size = "light", href } = Astro.props as Props;
+const { size, href } = Astro.props as Props;
+
+const fontType = size === "heavy" ? "Metropolis Bold" : "Metropolis Light";
 ---
 
-<a href={href} class={size === "heavy" ? "heavy" : "light"}>
+<a href={href}>
   <slot />
 </a>
 
-<style>
+<style define:vars={{ fontType }}>
   a {
-    font-family: "Metropolis";
+    font-family: var(--fontType);
     line-height: 30px;
     text-decoration: none;
     color: black;

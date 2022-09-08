@@ -2,7 +2,7 @@ import { colors } from "../../../theme/colors";
 
 export const styles = {
   primaryButton: {
-    fontFamily: "Metropolis, Arial",
+    fontFamily: "Metropolis Semi Bold, Helvetica",
     color: colors.neutrals.offwhite,
     border: "none",
     padding: "0 16px",

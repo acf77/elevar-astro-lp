@@ -2,7 +2,7 @@ import { breakpoints } from "../../../theme/breakpoints";
 import { colors } from "../../../theme/colors";
 
 export const displayTextStyle = {
-  fontFamily: "Metropolis",
+  fontFamily: "Metropolis Bold",
   fontWeight: "700",
   fontSize: "72px",
   lineHeight: "80px",

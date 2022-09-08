@@ -1,8 +1,15 @@
+---
+const { size } = Astro.props;
+
+const fontType =
+  size === "heavy" ? "Metropolis Semi Bold" : "Metropolis Regular";
+---
+
 <p><slot /></p>
 
-<style>
+<style define:vars={{ fontType }}>
   p {
-    font-family: "Metropolis";
+    font-family: var(--fontType);
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;

@@ -1,9 +1,22 @@
 ---
 import { subheadingTextStyles } from "./styles";
 
-type SubheadingTextProps = React.HTMLProps<HTMLHeadingElement> & {
-  textType?: "light" | "heavy";
+type Props = React.HTMLProps<HTMLHeadingElement> & {
+  size?: "light" | "heavy";
 };
+
+const { size } = Astro.props as Props;
+
+const fontType = size === "heavy" ? "Metropolis Bold" : "Metropolis Light";
 ---
 
-<h3 style={subheadingTextStyles}><slot /></h3>
+<h3><slot /></h3>
+
+<style define:vars={{ fontType }}>
+  h3 {
+    font-family: var(--fontType);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+</style>

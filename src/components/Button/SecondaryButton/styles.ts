@@ -1,9 +1,9 @@
 import { colors } from "../../../theme/colors";
 
 export const secondaryButtonStyles = {
-  fontFamily: "Metropolis, Arial",
+  fontFamily: "Metropolis Semi Bold, Arial",
   color: colors.getPrimary(6),
-  border: " 1.5px solid",
+  border: "1.5px solid",
   padding: "0 16px",
   gap: "6px",
   borderRadius: "8px",
