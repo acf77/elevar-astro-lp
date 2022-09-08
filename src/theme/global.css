@@ -1,0 +1,19 @@
+:root {
+  --color-primary: #7153a1;
+}
+
+html {
+  font-family: "Metropolis", "Helvetica";
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    width: max-content;
+  }
+}

@@ -9,11 +9,6 @@ export const displayTextStyle = {
   letterSpacing: "-2px",
   margin: "0px",
 
-  [`@media (max-width: ${breakpoints.MOBILE_LARGE})`]: {
-    lineHeight: "60px",
-    fontSize: "50px",
-  },
-
   // @media (max-width: 1024px) {
   //   font-size: 48px;
   //   line-height: 54px;

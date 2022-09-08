@@ -1,13 +1,26 @@
 ---
 import CaptionText from "@components/Text/CaptionText/index.astro";
-import Stack from "@components/Stack/index.astro";
+import HamburgerMenu from "@components/HamburgerMenu";
 
-import { navbarStyle } from "./styles";
+import "./navbar.css";
+import { PrimaryButton } from "@components/Button/PrimaryButton";
 ---
 
-<div style={navbarStyle.container}>
-  <Stack direction="row" gap={34}>
-    <img src="/elevar-logo-56px.svg" />
+<nav class="container">
+  <div class="hamburger-menu">
+    <HamburgerMenu client:visible />
+  </div>
+
+  <div class="items-container">
+    <img src="/elevar-logo-56px.svg" class="elevar-logo" />
     <CaptionText href="/" size="heavy">Book a consultation</CaptionText>
-  </Stack>
-</div>
+  </div>
+
+  <div class="ask-doctor-button">
+    <PrimaryButton
+      title="Ask a doctor"
+      onClick={"() => window?.open(`https://api.whatsapp.com/send?phone=14155238886`)"}
+      client:load
+    />
+  </div>
+</nav>

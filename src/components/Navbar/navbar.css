@@ -1,0 +1,57 @@
+.container {
+  height: 72px;
+  padding: 0 120px;
+  padding-bottom: 73px;
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(
+    270deg,
+    #ded7ea 0%,
+    rgba(244, 242, 248, 0.8) 55.58%,
+    rgba(244, 242, 248, 0) 100%
+  );
+}
+
+.elevar-logo {
+  width: 140px;
+}
+
+/* @media screen and (max-width: 768px) {
+  .elevar-logo {
+    padding: 0 20px;
+  }
+} */
+
+.items-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.ask-doctor-button {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background: #ded7ea;
+    display: flex;
+    padding: 8px 16px;
+  }
+  .hamburger-menu {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    flex-direction: row;
+  }
+  .items-container > a {
+    display: none;
+  }
+}

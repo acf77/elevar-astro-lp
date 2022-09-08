@@ -1,6 +1,4 @@
 ---
-import { captionTextStyle, captionTextStyleHeavy } from "./styles";
-
 type Props = {
   size?: "heavy" | "light";
   href?: string;
@@ -23,7 +21,7 @@ const { size = "light", href } = Astro.props as Props;
     font-size: 12px;
   }
   a:hover {
-    color: blueviolet;
+    color: --color-primary;
   }
   .light {
     font-weight: 400;

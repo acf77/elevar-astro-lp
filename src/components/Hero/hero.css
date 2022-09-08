@@ -1,0 +1,95 @@
+.gradient {
+  background: linear-gradient(
+    270deg,
+    #ded7ea 0%,
+    rgba(244, 242, 248, 0.8) 55.58%,
+    rgba(244, 242, 248, 0) 100%
+  );
+  width: 100%;
+}
+.hero-stack {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.text-container {
+  padding: 0 16px;
+}
+.button-stack {
+  padding: 16px 0;
+}
+
+@media (max-width: 768px) {
+  .gradient {
+    background: linear-gradient(
+      180deg,
+      #ded7ea 0%,
+      rgba(244, 242, 248, 0.8) 55.58%,
+      rgba(244, 242, 248, 0) 100%
+    );
+  }
+  .hero-stack {
+    flex-direction: column-reverse;
+  }
+  .button-stack {
+    display: none;
+    padding: 0 16px;
+  }
+}
+
+.phone {
+  animation: phone 1s ease-in 0s forwards;
+}
+
+@keyframes phone {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .phone {
+    margin-top: 25px;
+  }
+}
+
+.first-question {
+  border-radius: 16px;
+  background: #ded7ea;
+  position: absolute;
+  padding: 16px;
+  width: 220px;
+  left: 325px;
+  top: 210px;
+  animation: first-question 1s ease-out 0s forwards;
+  animation-delay: 1s;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .first-question {
+    top: 400px;
+  }
+}
+
+.hero-patient-avatar {
+  position: absolute;
+  left: 228px;
+  top: -15px;
+  width: 32px;
+}
+
+@keyframes first-question {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}

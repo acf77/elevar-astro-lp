@@ -8,7 +8,7 @@ type BodyTextProps = React.HTMLProps<HTMLHeadingElement> & {
   textType?: "light" | "heavy";
 };
 
-export const BodyText = styled(Typography)`
+export default function BodyText = styled(Typography)`
   font-weight: ${({ textType }: BodyTextProps) => {
     switch (textType) {
       case "light":
