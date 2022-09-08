@@ -22,6 +22,7 @@ body {
   font-family: "Metropolis Regular";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Regular"),
     url("/fonts/Metropolis-Regular.woff") format("woff");
 }
@@ -30,6 +31,7 @@ body {
   font-family: "Metropolis Regular Italic";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Regular Italic"),
     url("/fonts/Metropolis-RegularItalic.woff") format("woff");
 }
@@ -38,6 +40,7 @@ body {
   font-family: "Metropolis Extra Light";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Extra Light"),
     url("/fonts/Metropolis-ExtraLight.woff") format("woff");
 }
@@ -46,6 +49,7 @@ body {
   font-family: "Metropolis Light";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Light"),
     url("/fonts/Metropolis-Light.woff") format("woff");
 }
@@ -54,6 +58,7 @@ body {
   font-family: "Metropolis Thin";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Thin"),
     url("/fonts/Metropolis-Thin.woff") format("woff");
 }
@@ -62,6 +67,7 @@ body {
   font-family: "Metropolis Extra Light Italic";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Extra Light Italic"),
     url("/fonts/Metropolis-ExtraLightItalic.woff") format("woff");
 }
@@ -70,6 +76,7 @@ body {
   font-family: "Metropolis Light Italic";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Light Italic"),
     url("/fonts/Metropolis-LightItalic.woff") format("woff");
 }
@@ -78,6 +85,7 @@ body {
   font-family: "Metropolis Thin Italic";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Thin Italic"),
     url("/fonts/Metropolis-ThinItalic.woff") format("woff");
 }
@@ -86,6 +94,7 @@ body {
   font-family: "Metropolis Medium";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Medium"),
     url("/fonts/Metropolis-Medium.woff") format("woff");
 }
@@ -94,6 +103,7 @@ body {
   font-family: "Metropolis Semi Bold";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Semi Bold"),
     url("/fonts/Metropolis-SemiBold.woff") format("woff");
 }
@@ -102,6 +112,7 @@ body {
   font-family: "Metropolis Bold";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Bold"),
     url("/fonts/Metropolis-Bold.woff") format("woff");
 }
@@ -110,6 +121,7 @@ body {
   font-family: "Metropolis Bold Italic";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Bold Italic"),
     url("/fonts/Metropolis-BoldItalic.woff") format("woff");
 }
@@ -118,6 +130,7 @@ body {
   font-family: "Metropolis Medium Italic";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Medium Italic"),
     url("/fonts/Metropolis-MediumItalic.woff") format("woff");
 }
@@ -126,6 +139,7 @@ body {
   font-family: "Metropolis Semi Bold Italic";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Semi Bold Italic"),
     url("/fonts/Metropolis-SemiBoldItalic.woff") format("woff");
 }
@@ -134,6 +148,7 @@ body {
   font-family: "Metropolis Extra Bold";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Extra Bold"),
     url("/fonts/Metropolis-ExtraBold.woff") format("woff");
 }
@@ -142,6 +157,7 @@ body {
   font-family: "Metropolis Extra Bold Italic";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Extra Bold Italic"),
     url("/fonts/Metropolis-ExtraBoldItalic.woff") format("woff");
 }
@@ -150,6 +166,7 @@ body {
   font-family: "Metropolis Black";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Black"),
     url("/fonts/Metropolis-Black.woff") format("woff");
 }
@@ -158,6 +175,7 @@ body {
   font-family: "Metropolis Black Italic";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("Metropolis Black Italic"),
     url("/fonts/Metropolis-BlackItalic.woff") format("woff");
 }
