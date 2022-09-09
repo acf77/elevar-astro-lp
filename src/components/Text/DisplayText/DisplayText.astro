@@ -1,9 +1,23 @@
 ---
-import { displayTextStyle, displayTextStyleColor } from "./styles";
+import { colors } from "src/theme/colors";
 
 const { color } = Astro.props;
+
+const fontColor = color === "yellow" ? colors.getAccentYellow(6) : "black";
 ---
 
-<h1 style={color === "yellow" ? displayTextStyleColor : displayTextStyle}>
+<h1>
   <slot />
 </h1>
+
+<style define:vars={{ fontColor }}>
+  h1 {
+    font-family: "Metropolis Bold";
+    color: var(--fontColor);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    margin: 0px;
+  }
+</style>
